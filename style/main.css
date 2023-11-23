@@ -47,4 +47,10 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
+    text-shadow: 0 0 20px white;
+}
+
+nav li a:hover {
+    text-decoration: 3px solid white;
+    transition: ease 200ms;
 }
