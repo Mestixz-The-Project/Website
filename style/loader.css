@@ -19,7 +19,7 @@
 }
 
 @keyframes loaderanims {
-    0% {transform: RotateY(0deg);}
-    50% {transform: rotateY(180deg);}
-    100% {transform: rotateY(360deg);}
+    0% {transform: translateY(20px);}
+    50% {transform: translateY(-20px);}
+    100% {transform:  translateY(20px);}
 }
