@@ -14,9 +14,24 @@
     letter-spacing: 50px;
     font-size: 70px;
     font-weight: 100;
-    background-image: radial-gradient(rgba(255,255,255,0.5) ,transparent, transparent);
+    text-align: center;
+    animation: mestixztext 3s infinite;
 }
 
+@keyframes mestixztext {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 15px cyan;
+    }
+    50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 30px cyan;
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 15px cyan;
+    }
+}
 .welcome button {
     padding: 15px 30px;
     border-radius: 60px;
@@ -59,19 +74,14 @@
     transition: ease 200ms;
 }
 
-.games {
-    width: 100%;
-    display: inline-flex;
-    height: 100vh;
-}
-
 .gamemenu {
-    width: 25%;
     padding: 20px;
     border: 3px solid black;
-    display: block;
-    background-size: 500%;
-    background-position: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 100%;
+     background-position: 50%;
 }
 
 .gamemenu h1 {
