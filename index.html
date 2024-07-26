@@ -3,116 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="style/Images/MestixzLogo.png">
-    <link rel="stylesheet" href="style/loader.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/index.css">
-    <title>Mestixz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/header.css">
+    <link rel="stylesheet" href="Style/particle.css">
+
+    <link rel="icon" href="image/Logo_ROUNDED.png">
+    <title>Project Mestixz</title>
 </head>
+<body>
 
-<body onload="loading()"> 
-    <div id="loader">
-        <img src="style/Images/MestixzLogo.png" width="150" height="150">
-        <p style="text-transform: uppercase; letter-spacing: 30px; margin-top: 20px;">Loading...</p>
-    </div>
-
-    <div id="content">
-       <!--Header-->
-        <header>
-            <div class="logo">
-                <img src="style/Images/MestixzLogo.png" width="90">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#Games">Games</a></li>
-                    <li><a href="Guide">Guides</a></li>
-                    <li><a href="#ost">Music</a></li>
-                    <li><a href="#shop">Store</a></li>
-                    <li><a href="#FAQ">Game FAQ</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!--Section-->
-
-        <section class="welcome">
-            <h1>Mestixz</h1>
-            <h4>The World Beyond Imagination</h4>
-            <button>Launch <span class="arrow"><i class="fa-solid fa-angles-right"></i></span></button>
+    <header>
+        <h1>Project Mestixz</h1>
+        <nav>
             <ul>
-                <li><a href="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#Youtube"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="#Twitch"><i class="fa-brands fa-twitch"></i></a></li>
-                <li><a href="#Discord"><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#wiki">Wiki</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="banner" id="banner">
+            <div class="name">
+                <h4>Project</h4>
+                <h1>Mestixz</h1>
+            </div>
+
+            <div class="particle-container">
+                <!--
+                x = position y =  position
+                xt = horizontal movement speed
+                yt = vertical movement speed
+                xd = horizontal movement distance
+                yd = vertical movement distance
+                w = width & height
+                d = animation delay
+                -->
+                <span style="--x:50; --y:0; --xt:13; --yt:12; --xd:2; --yd:2; --w:25;  --d:1; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:16; --y:0; --xt:17; --yt:10; --xd:3; --yd:1; --w:39;  --d:6; --o:.5;" class="pt"><b></b></span>
+                <span style="--x:16; --y:0; --xt:17; --yt:10; --xd:3; --yd:3; --w:28;  --d:4; --o:.9;" class="pt"><b></b></span>
+                  <span style="--x:66; --y:0; --xt:11; --yt:13; --xd:3; --yd:2; --w:38;  --d:2; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:56; --y:-3; --xt:11; --yt:10; --xd:3; --yd:1; --w:58;  --d:0; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:19; --y:0; --xt:17; --yt:10; --xd:3; --yd:4; --w:45;  --d:9; --o:.7;" class="pt"><b></b></span>
+                <span style="--x:49; --y:0; --xt:17; --yt:10; --xd:3; --yd:-4; --w:65;  --d:2; --o:.6;" class="pt"><b></b></span>
+                <span style="--x:20; --y:0; --xt:13; --yt:12; --xd:2; --yd:4; --w:70;  --d:8; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:35; --y:3; --xt:8; --yt:16; --xd:0.5; --yd:0.8; --w:190; --d:5; --o:.7;" class="pt"><b></b></span>
+                <span style="--x:15; --y:10; --xt:18; --yt:16; --xd:0.5; --yd:1; --w:190; --d:6; --o:.9;" class="pt"><b></b></span>
+                <span style="--x:15; --y:30; --xt:9; --yt:22; --xd:0.5; --yd:1; --w:30; --d:9; --o:.4;" class="pt"><b></b></span>
+                <span style="--x:4; --y:20; --xt:10; --yt:7; --xd:1.5; --yd:1.2; --w:26; --d:12; --o:0.4;" class="pt"><b></b></span> 
+                <span style="--x:50; --y:40; --xt:16; --yt:6; --xd:4; --yd:-2; --w:70; --d:5; --o:0.3;" class="pt"><b></b></span>
+                <span style="--x:50; --y:40; --xt:16; --yt:6; --xd:1; --yd:-2; --w:170; --d:0; --o:1;" class="pt"><b></b></span>
+                 <span style="--x:60; --y:40; --xt:16; --yt:6; --xd:1; --yd:2; --w:70; --d:5; --o:0.4;" class="pt"><b></b></span>
+                <span style="--x:50; --y:50; --xt:12; --yt:7; --xd:1; --yd:1.2; --w:100; --d:7; --o:0.4;" class="pt"><b></b></span>
+                  <span style="--x:70; --y:40; --xt:4; --yt:1; --xd:0.5; --yd:.2; --w:100; --d:7; --o:0.4;" class="pt"><b></b></span>
+                <span style="--x:2; --y:50; --xt:10; --yt:7; --xd:1; --yd:1.2; --w:20; --d:7; --o:0.4;" class="pt"><b></b></span>
+                  <span style="--x:4; --y:50; --xt:10; --yt:7; --xd:1.5; --yd:1.2; --w:16; --d:12; --o:0.4;" class="pt"><b></b></span> 
+                <span style="--x:10; --y:40; --xt:10; --yt:17; --xd:2; --yd:1.2; --w:28; --d:7; --o:0.4;" class="pt"><b></b></span>
+                <span style="--x:70; --y:60; --xt:12; --yt:6; --xd:2; --yd:2; --w:36; --d:5; --o:0.7;" class="pt"><b></b></span>
+                <span style="--x:10; --y:60; --xt:12; --yt:16; --xd:-1; --yd:2.2; --w:80; --d:5; --o:0.7;" class="pt"><b></b></span>
+                <span style="--x:10; --y:70; --xt:12; --yt:26; --xd:-1; --yd:2.2; --w:110; --d:5; --o:0.7;" class="pt"><b></b></span>
+               <span style="--x:19; --y:70; --xt:12; --yt:26; --xd:-1; --yd:3.2; --w:20; --d:5; --o:0.7;" class="pt"><b></b></span>
+              </div>
         </section>
 
-        <!--Game Navi-->
-        <section class="games">
-            <div class="gamemenu">
-                <h1>The 8 Guardians</h1>
-                <p>When the dark witch is trying to control over the World. The Guardians must protect and defeat her.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
+        <section class="about" id="about">
+            <h1>The world of imagination through Reality.</h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus efficitur eros eget bibendum vehicula. Suspendisse non purus sed quam finibus tempor. 
+            Mauris rutrum et quam vel pharetra. Pellentesque efficitur semper ex, vitae finibus ipsum tincidunt ac. 
+            Curabitur ac justo risus. Quisque eu orci sapien. Nulla interdum, lorem a lobortis imperdiet, 
+            tortor magna efficitur sem, placerat efficitur ipsum diam sed odio. Etiam id rutrum ex. "
+            Nullam consequat elementum quam a luctus.</p>
+        </section>
+        <section class="games" id="games">
+            <h1>Games</h1>
+            <div class="game-content">
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Worship</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue"> Rougelike Game </b> about the story of "Dark Age". </p>
+                    </div>
                 </div>
-            </div>
-            <div class="gamemenu">
-                <h1>The Goodie and the Sinners</h1>
-                <p>The wars between Heaven and Hell.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
+
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Re-Terra</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue"> MMOPRG Game </b> about the Origin of "Renaiscia" in Civilize Age</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gamemenu">
-                <h1>Worship</h1>
-                <p>The Rebellion of the gods which never ends.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
+
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Moonfall</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue">Action, Hack n Slash Game</b> about the great war in the middle part of Civilize Age</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gamemenu">
-                <h1>Elysium Advention</h1>
-                <p>To stop the rebel cycle, Gwyneth must defeat the last god and create the new area for peace.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
-                </div>
-            </div>
-            <div class="gamemenu" style="background-image: url('style/Images/MoonfallCG2.png');">
-                <h1>Moonfall</h1>
-                <p>Because the failure of the second Moon curator, the war has begun.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
-                </div>
-            </div>
-            <div class="gamemenu" style="background-image: url('style/Images/ElvenAbyssGP1.png');">
-                <h1>Elven Abyss</h1>
-                <p>The escape of the elf princess, Anabelle.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
-                </div>
-            </div>
-            <div class="gamemenu">
-                <h1>The 5 Era Survivors</h1>
-                <p>5 young girls have been time travelled to the past by the mafia gang, they have to find the way back home and stop the mafia boss.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
-                </div>
-            </div>
-            <div class="gamemenu">
-                <h1>Evolution War</h1>
-                <p>There are violences caused by the dark company "Black Rose". The "Blue Moon" organization have to do thier best to defeat them.</p>
-                <div class="buttoncontainer">
-                    <button><i class="fa-solid fa-play"></i></button><button><i class="fa-solid fa-book"></i></button>
+
+                <div class="selection">
+                    <div class="selection-content">
+                        <div class="selection-content-emblem"></div>
+                        <h2>Future War</h2>
+                        <p>The <b style="text-shadow: 0 0 10px aliceblue">Action, Turn-Based Game series</b> About the war in the Future Age.</p>
+                    </div>
                 </div>
             </div>
         </section>
-    </div>
-    
-    <script src="script/loader.js"></script>
-    <script src="script/index.js"></script>
+    </main>
 </body>
 </html>
